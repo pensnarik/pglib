@@ -5,7 +5,7 @@ import psycopg2
 from pglib import Function
 from pglib import Table
 
-conn = psycopg2.connect("dbname=comagic_y host=devbase.uiscom.ru user=postgres")
+conn = psycopg2.connect("")
 
 f = Function(conn)
 t = Table(conn)
