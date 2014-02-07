@@ -9,7 +9,7 @@ def sql_execute(conn, query, args=[], limit=0):
     res = cursor.fetchall()
     cursor.close()
 
-    if limit == 1 or len(res) == 1:
+    if limit == 1:
         if res:
             if len(res[0]) == 1:
                 return res[0][0]
